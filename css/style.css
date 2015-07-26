@@ -112,14 +112,14 @@
     }
 
     .project-outline {
-        border: 1px dashed #e7e7e7;
+        /*border: 1px dashed #e7e7e7;*/
         /*width: 100%;*/
         /*height: auto;*/
         /*min-height: 50px;*/
         /*max-height: 400px;*/
-        height: 400px;
+        /*height: 400px;
         overflow: hidden;
-        margin-bottom: 10px;
+        margin-bottom: 10px;*/
     }
 
 
@@ -151,7 +151,9 @@
         text-transform: uppercase;
     }
 
-    .project-roles {}
+    .project-roles {
+
+    }
 
     .slide-img img {
         width: 100%;
