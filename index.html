@@ -5,217 +5,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Rose Heydt | Web Developer">
     <meta name="author" content="Rose Heydt">
-    <link rel="icon" href="img/favicon.ico">
     <title>Rose Heydt | Developer</title>
+
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+=    <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Icons -->
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="font-mfizz/font-mfizz.css" type="text/css">
+
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="css/plain.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
-<style>
-    /* helpers */
-
-    .clear {
-        clear: both;
-    }
-
-    .clean {
-        background: transparent;
-        border: none;
-    }
-
-    .center-float-container {
-        float: right;
-        position: relative;
-        left: -50%;
-        text-align: left;
-    }
-
-    .center-float-inside {
-        position: relative;
-        left: 50%;
-    }
-
-    .no-padding {
-        padding: 0;
-    }
-
-
-    /* general */
-
-    html,
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h3 {
-        color: #333338;
-        font-size: 16px;
-    }
-
-
-    /* header */
-
-    #mainNav {
-        background-color: #fff;
-    }
-
-    nav.navbar-default {
-        background-color: transparent;
-    }
-
-    .navbar-header {}
-
-    a.navbar-brand:hover {
-        color: #000;
-    }
-
-    button.navbar-toggle,
-    button.navbar-toggle[aria-expanded="false"] {
-        position: absolute;
-        right: 0;
-        height: 20px;
-        width: 20px;
-        padding: 16px;
-        border: 0;
-        background: url('img/nav-toggle.svg') no-repeat center center transparent;
-        cursor: pointer;
-        -webkit-transition: -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
-        -moz-transition: -moz-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    button.navbar-toggle[aria-expanded="true"] {
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        -o-transform: rotate(135deg);
-        transform: rotate(135deg);
-    }
-
-    button.navbar-toggle:hover,
-    button.navbar-toggle:focus,
-    button.navbar-toggle:active,
-    button.navbar-toggle:visited {
-        background-color: transparent !important;
-    }
-
-    .headroom {
-        height: 100px;
-        padding-bottom: 20px;
-    }
-
-
-    /* mobile nav */
-
-    #mobile-nav {
-        text-align: center;
-    }
-
-    #mobile-nav .nav > li {
-        display: inline-block;
-    }
-
-
-    /* projects */
-
-    .project-container {
-        /*display: block;*/
-        /*width: 80%;*/
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .project-outline {
-        border: 1px dashed #e7e7e7;
-        /*width: 100%;*/
-        /*height: auto;*/
-        /*min-height: 50px;*/
-        /*max-height: 400px;*/
-        height: 400px;
-        overflow: hidden;
-        margin-bottom: 10px;
-    }
-
-
-    /*.project-outline a.project:hover {
-                background: transparent;
-            }*/
-
-    .project-outline img {
-        width: 100%;
-        height: auto;
-    }
-
-    .project-outline img:hover {
-        filter: blur(10px);
-        /*safari*/
-        -webkit-filter: blur(10px);
-        /*chrome*/
-        filter: url(img/blur.svg#blur);
-        /*firefox*/
-        -webkit-transition: all 0.15s ease-out;
-        transition: all 0.15s ease-out;
-    }
-
-    .project-info {
-        display: none;
-    }
-
-    .project-title {
-        text-transform: uppercase;
-    }
-
-    .project-roles {}
-
-    .slide-img img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* about */
-
-    #about {
-        background-color: #F3F4F8;
-    }
-
-    #about h3 {
-        margin: 60px 0 30px 0;
-        line-height: 30px;
-    }
-
-    #about p {
-        line-height: 26px;
-        max-width: 600px;
-        color: #99999a;
-    }
-
-    #about a {
-        color: #66666a;
-    }
-
-    #about a:hover {
-        color: #22222a;
-    }
-</style>
 
 <body id="page-top">
 
