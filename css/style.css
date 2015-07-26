@@ -103,6 +103,10 @@
 
 
 /* projects */
+    #portfolio {
+        /*background-color: #F3F4F8;*/
+        background-color: aliceblue;
+    }
 
     .project-container {
         /*display: block;*/
