@@ -150,11 +150,10 @@
         margin-bottom: 30px;
     }
 
-    #projects .project-block a h4,
-    #projects .project-block a span,
-    #projects .project-block a:hover span {
-        text-decoration: none !important;
-        color: #2f363b !important;
+    #projects a.project-block a,
+    #projects a.project-block:hover {
+        text-decoration: none;
+        color: #2f363b;
     }
 
     #projects .project-block .project-image.wellesley {
