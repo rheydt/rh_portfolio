@@ -42,14 +42,21 @@
     <![endif]-->
 
     <script>
-    $(document).ready(function(){
-        $(".btn1").click(function(){
-            $("p").hide("fast", "linear");
+        var lastScrollTop = 0;
+
+        $(window).scroll(function () {
+
+            var st = $(this).scrollTop();
+
+            if (st < lastScrollTop){
+                $('.navbar ').slideDown();
+            } else {
+              $('.navbar ').slideUp();
+            }
+
+            lastScrollTop = st;
+
         });
-        $(".btn2").click(function(){
-            $("p").show("fast", "linear");
-        });
-    });
     </script>
 
 </head>
