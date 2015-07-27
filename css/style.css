@@ -152,8 +152,8 @@
 
     #projects .project-block a,
     #projects .project-block a:hover {
-        text-decoration: none;
-        color: #2f363b;
+        text-decoration: none !important;
+        color: #2f363b !important;
     }
 
     #projects .project-block .project-image.wellesley {
