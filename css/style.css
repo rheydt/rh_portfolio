@@ -235,9 +235,15 @@
     #projects .project-block.art .project-image {
         background-image: url('../img/backgrounds/art_background.png');
         /*background-color: #E6A803;*/
-        background-position: 59% 44%;
+        background-position: 11% 44%;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 127%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
     }
     #projects .project-block.art .project-info {
         background-color: #a4aaa0;
