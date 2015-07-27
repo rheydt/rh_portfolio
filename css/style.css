@@ -169,6 +169,10 @@
         color: #2f363b;
     }
 
+    #projects .project-block .project-info {
+        color: #fff;
+    }
+
     #projects .project-block .project-info .see-more {
         display: block;
         clear: both;
@@ -193,6 +197,9 @@
         -moz-transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
         transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;*/
     }
+    #projects .project-block.wellesley .project-info {
+        background-color: #FE8282;
+    }
 
     #projects .project-block.davis .project-image {
         background-image: url('../img/backgrounds/davis_background.png');
@@ -200,6 +207,9 @@
         background-repeat: no-repeat;
         background-position: 7% 21%;
         background-size: 116%;
+    }
+    #projects .project-block.wellesley .project-info {
+        background-color: #1C1135;
     }
 
     #projects .project-block.cb .project-image {
