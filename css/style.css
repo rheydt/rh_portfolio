@@ -232,6 +232,19 @@
         background-color: #E6A803;
     }
 
+    #projects .project-block.art .project-image {
+        background-image: url('../img/backgrounds/art_background.png');
+        /*background-color: #E6A803;*/
+        background-position: 59% 44%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #projects .project-block.art .project-info {
+        background-color: #a4aaa0;
+    }
+
+
+
     #projects .project-block .project-image img {
         width: 100%;
         height: auto;
