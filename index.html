@@ -51,11 +51,13 @@
             var st = $(this).scrollTop();
 
             if (st < lastScrollTop){
-                $('.navbar ').slideDown();
+                // $('.navbar ').slideDown();
                 // $('.navbar ').fadeIn();
+                $('.navbar').addClass('slide-in');
             } else {
-              $('.navbar ').slideUp();
+              // $('.navbar ').slideUp();
               // $('.navbar ').fadeOut();
+              $('.navbar').removeClass('slide-in');
             }
 
             lastScrollTop = st;
