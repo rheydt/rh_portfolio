@@ -40,6 +40,7 @@
     body {
         font-family: 'Roboto', sans-serif;
         color: #2f363b;
+        -webkit-font-smoothing: antialiased;
     }
 
     h3 {
@@ -144,9 +145,18 @@
         text-transform: uppercase;
     }
 
-    #projects .project-block .project-image {
-        /*width: 60%;*/
-        /*height: auto;*/
+    #projects .project-block .project-image.wellesley {
+        background-image: url('../img/screenshots/course_browser+desktop.png');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        transition: opacity 0.2s linear;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
     #projects .project-block .project-image img {
         width: 100%;
