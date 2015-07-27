@@ -110,6 +110,12 @@
         padding: 20px 0;
     }
 
+    .desktop,
+    .tablet,
+    .mobile {
+        max-height: 200px;
+    }
+
     .project-container {
         /*display: block;*/
         /*width: 80%;*/
