@@ -43,6 +43,14 @@
 
     #mainNav {
         background-color: #fff;
+        filter: blur(10px);
+        /*safari*/
+        -webkit-filter: blur(10px);
+        /*chrome*/
+        filter: url(img/blur.svg#blur);
+        /*firefox*/
+        /*-webkit-transition: all 0.15s ease-out;*/
+        /*transition: all 0.15s ease-out;*/
     }
 
     nav.navbar-default {
