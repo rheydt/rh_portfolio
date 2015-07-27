@@ -53,6 +53,7 @@
 
     a.navbar-brand:hover {
         color: #000;
+        -webkit-transition: color 0.2s linear;
     }
 
     button.navbar-toggle,
@@ -83,6 +84,7 @@
     button.navbar-toggle:active,
     button.navbar-toggle:visited {
         background-color: transparent !important;
+        -webkit-transition: color 0.2s linear;
     }
 
     .headroom {
@@ -198,4 +200,5 @@
 
     #about a:hover {
         color: #22222a;
+        -webkit-transition: color 0.2s linear;
     }
