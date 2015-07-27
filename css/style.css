@@ -126,6 +126,7 @@
     .tablet,
     .mobile {
         max-height: 250px;
+        margin-right: 20px;
     }
 
     .project-container {
