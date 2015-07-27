@@ -163,7 +163,7 @@
         transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;*/
     }
 
-    #projects .project-block .project-image.wellesley {
+    #projects .project-block .project-image.cb {
         background-image: url('../img/screenshots/course_browser+desktop.png');
         background-color: lightslategray;
         background-position: 50% 50%;
