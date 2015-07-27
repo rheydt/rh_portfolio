@@ -116,9 +116,9 @@
     .desktop,
     .tablet,
     .mobile {
-        height: auto;
+        /*height: auto;*/
         max-height: 200px;
-        width: auto;
+        /*width: auto;*/
     }
 
     .project-container {
