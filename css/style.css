@@ -213,7 +213,7 @@
     }
 
     #projects .project-block.cb .project-image {
-        background-image: url('../img/screenshots/course_browser+desktop.png');
+        background-image: url('../img/screenshots/cb_background.png');
         background-color: lightslategray;
         background-position: 59% 44%;
         background-repeat: no-repeat;
