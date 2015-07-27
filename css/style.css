@@ -180,7 +180,7 @@
         padding: 5px;
     }
 
-    #projects .project-block .project-image.wellesley {
+    #projects .project-block.wellesley .project-image {
         background-image: url('../img/backgrounds/wellesley_background.png');
         background-color: lightslategray;
         background-position: 68% 12%;
@@ -194,7 +194,7 @@
         transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;*/
     }
 
-    #projects .project-block .project-image.davis {
+    #projects .project-block.davis .project-image {
         background-image: url('../img/backgrounds/davis_background.png');
         background-color: lightslategray;
         background-repeat: no-repeat;
@@ -202,7 +202,7 @@
         background-size: 116%;
     }
 
-    #projects .project-block .project-image.cb {
+    #projects .project-block.cb .project-image {
         background-image: url('../img/screenshots/course_browser+desktop.png');
         background-color: lightslategray;
         background-position: 59% 44%;
