@@ -186,7 +186,7 @@
 
     #projects .project-block.wellesley .project-image {
         background-image: url('../img/backgrounds/wellesley_background.png');
-        background-color: lightslategray;
+        /*background-color: lightslategray;*/
         background-position: 68% 12%;
         background-repeat: no-repeat;
         /*background-size: cover;*/
@@ -203,7 +203,7 @@
 
     #projects .project-block.davis .project-image {
         background-image: url('../img/backgrounds/davis_background.png');
-        background-color: lightslategray;
+        /*background-color: lightslategray;*/
         background-repeat: no-repeat;
         background-position: 7% 21%;
         background-size: 116%;
@@ -214,10 +214,13 @@
 
     #projects .project-block.cb .project-image {
         background-image: url('../img/backgrounds/cb_background.png');
-        background-color: #E6A803;
+        /*background-color: #E6A803;*/
         background-position: 59% 44%;
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+    #projects .project-block.davis .project-info {
+        background-color: #E6A803;
     }
 
     #projects .project-block .project-image img {
