@@ -51,6 +51,7 @@
 
     #mainNav {
         background-color: #fff;
+        border-bottom: none;
     }
 
     .navbar {
