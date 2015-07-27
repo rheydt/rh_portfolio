@@ -29,6 +29,10 @@
         top: -100px;
     }
 
+    .row {
+        display: flex;
+    }
+
 
 /* general */
 
