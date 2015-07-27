@@ -120,6 +120,7 @@
 /* projects */
     #projects {
         float: left;
+        padding-bottom: 40px;
     }
     #projects > .container {
         /*background-color: #F3F4F8;*/
