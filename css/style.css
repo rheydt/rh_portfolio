@@ -105,13 +105,13 @@
     }
 
 
-/* mobile nav */
+/* nav links */
 
-    #mobile-nav {
+    #nav-links{
         text-align: center;
     }
 
-    #mobile-nav .nav > li {
+    #nav-links.nav > li {
         display: inline-block;
     }
 
