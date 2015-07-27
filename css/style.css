@@ -105,7 +105,7 @@
 
 
 /* projects */
-    #portfolio {
+    #portfolio > .container {
         /*background-color: #F3F4F8;*/
         /*background-color: aliceblue;*/
         /*background-color: #1e1f22;*/
