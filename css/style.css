@@ -173,15 +173,22 @@
         color: #fff;
     }
 
+    #projects .project-block .project-info h4 {
+        margin-top: 30px;
+    }
+
     #projects .project-block .project-info .see-more {
         display: block;
         clear: both;
         background-color: transparent;
         box-shadow: none;
         border: 2px solid #bbb;
-        margin-top: 10px;
-        width: 100%;
+        /*margin-top: 10px;*/
+        width: 80%;
+        margin: 15px auto;
         padding: 5px;
+        position: absolute;
+        bottom: 30px;
     }
 
     #projects .project-block.wellesley .project-image {
