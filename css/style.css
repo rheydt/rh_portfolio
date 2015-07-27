@@ -113,7 +113,9 @@
     .desktop,
     .tablet,
     .mobile {
+        height: auto;
         max-height: 200px;
+        width: auto;
     }
 
     .project-container {
