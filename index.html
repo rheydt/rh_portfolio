@@ -45,28 +45,28 @@
     <![endif]-->
 
     <script>
-        // var lastScrollTop = 200;
+        var lastScrollTop = 200;
 
-        // $(window).scroll(function () {
+        $(window).scroll(function () {
 
-        //     var st = $(this).scrollTop();
+            var st = $(this).scrollTop();
 
-        //     if (st < lastScrollTop){
-        //         $('.navbar').removeClass('slide-in');
-        //     } else {
-        //       $('.navbar').addClass('slide-in');
-        //     }
+            if (st < lastScrollTop){
+                $('.navbar').removeClass('slide-in');
+            } else {
+              $('.navbar').addClass('slide-in');
+            }
 
-        //     lastScrollTop = st;
+            lastScrollTop = st;
 
-        // });
+        });
     </script>
 
 </head>
 
 
 
-<body id="page-top" data-spy="scroll" data-target="#nav-links" data-offset="20">
+<body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -115,7 +115,7 @@
 
     <div class="main-content">
 
-        <section id="projects" class="col-xs-12">
+        <section id="projects">
             <!-- <div class="container col-xs-12 col-sm-10 col-sm-offset-1"> -->
             <div class="container col-xs-12">
                 <h3>Recent Projects</h3>
