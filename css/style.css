@@ -45,6 +45,10 @@
         background-color: #fff;
     }
 
+    .navbar {
+        transition: top 0.2s ease-in-out;
+    }
+
     nav.navbar-default {
         background-color: transparent;
     }
