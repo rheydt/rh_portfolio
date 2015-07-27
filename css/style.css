@@ -31,6 +31,8 @@
 
     .row {
         display: flex;
+        margin-left: -1px;
+        margin-right: -1px;
     }
 
 
@@ -41,6 +43,17 @@
         font-family: 'Roboto', sans-serif;
         color: #2f363b;
         -webkit-font-smoothing: antialiased;
+    }
+
+    h2 {
+        margin: 50px 0;
+        padding-top: 50px;
+        border-top: 1px solid #CCC;
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        clear: both;
     }
 
     h3 {
