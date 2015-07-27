@@ -156,6 +156,17 @@
         color: #2f363b;
     }
 
+    #projects .project-block .project-info .see-more {
+        display: block;
+        clear: both;
+        background-color: transparent;
+        box-shadow: none;
+        border: 2px solid #bbb;
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+    }
+
     #projects .project-block .project-image.wellesley {
         background-image: url('../img/backgrounds/wellesley_background.png');
         background-color: lightslategray;
