@@ -108,8 +108,8 @@
     #portfolio {
         /*background-color: #F3F4F8;*/
         /*background-color: aliceblue;*/
-        background-color: #1e1f22;
-        /*background-color: lightslategray;*/
+        /*background-color: #1e1f22;*/
+        background-color: lightslategray;
         padding: 20px 0;
     }
 
@@ -137,6 +137,8 @@
         /*height: 400px;
         overflow: hidden;
         margin-bottom: 10px;*/
+        padding-bottom: 25px;
+        margin-bottom: 25px;
     }
 
 
