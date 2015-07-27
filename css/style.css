@@ -160,7 +160,7 @@
 
     #projects .project-block {
         height: 250px;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 
     #projects a.project-block ,
