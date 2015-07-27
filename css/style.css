@@ -147,14 +147,14 @@
     }
 
     .project-outline img:hover {
-        filter: blur(10px);
+        /*filter: blur(10px);*/
         /*safari*/
-        -webkit-filter: blur(10px);
+        /*-webkit-filter: blur(10px);*/
         /*chrome*/
-        filter: url(../img/blur.svg#blur);
+        /*filter: url(../img/blur.svg#blur);*/
         /*firefox*/
-        -webkit-transition: all 0.15s ease-out;
-        transition: all 0.15s ease-out;
+        /*-webkit-transition: all 0.15s ease-out;*/
+        /*transition: all 0.15s ease-out;*/
     }
 
     .project-info {
