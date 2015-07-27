@@ -145,19 +145,21 @@
         text-transform: uppercase;
     }
 
+    #projects .project-block {
+        height: 250px;
+    }
+
     #projects .project-block .project-image.wellesley {
         background-image: url('../img/screenshots/wellesley_home+desktop.png');
+        background-color: lightslategray;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-size: cover;
+        /*background-size: cover;*/
+        background-size: 170%;
         opacity: 1;
         transition: opacity 0.2s linear;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
     }
+
     #projects .project-block .project-image img {
         width: 100%;
         height: auto;
