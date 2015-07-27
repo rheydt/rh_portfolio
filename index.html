@@ -53,11 +53,11 @@
             if (st < lastScrollTop){
                 // $('.navbar ').slideDown();
                 // $('.navbar ').fadeIn();
-                $('.navbar').addClass('slide-in');
+                $('.navbar').removeClass('slide-in');
             } else {
               // $('.navbar ').slideUp();
               // $('.navbar ').fadeOut();
-              $('.navbar').removeClass('slide-in');
+              $('.navbar').addClass('slide-in');
             }
 
             lastScrollTop = st;
