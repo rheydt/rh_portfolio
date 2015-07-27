@@ -161,7 +161,8 @@
     }
 
     .project-info {
-        display: none;
+        /*display: none;*/
+        color: #fff;
     }
 
     .project-title {
