@@ -170,6 +170,14 @@
         transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;*/
     }
 
+    #projects .project-block .project-image.davis {
+        background-image: url('../img/screenshots/davis+desktop.png');
+        background-color: lightslategray;
+        background-position: 59% 44%;
+        background-repeat: no-repeat;
+        background-size: 181%;
+    }
+
     #projects .project-block .project-image.cb {
         background-image: url('../img/screenshots/course_browser+desktop.png');
         background-color: lightslategray;
