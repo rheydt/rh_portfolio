@@ -112,13 +112,20 @@
         background-color: lightslategray;
         padding: 20px 0;
     }
+    .desktop {
+        width: 50%;
+    }
+    .tablet {
+        width: 20%;
+    }
+    .mobile {
+        width: 14%;
+    }
 
     .desktop,
     .tablet,
     .mobile {
-        /*height: auto;*/
-        max-height: 300px;
-        /*width: auto;*/
+        max-height: 250px;
     }
 
     .project-container {
