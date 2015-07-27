@@ -141,8 +141,8 @@
     }
 
     #projects .project-block .project-image {
-        width: 60%;
-        height: auto;
+        /*width: 60%;*/
+        /*height: auto;*/
     }
     #projects .project-block .project-image img {
         width: 100%;
