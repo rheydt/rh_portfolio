@@ -214,7 +214,7 @@
 
     #projects .project-block.cb .project-image {
         background-image: url('../img/backgrounds/cb_background.png');
-        background-color: lightslategray;
+        background-color: #E6A803;
         background-position: 59% 44%;
         background-repeat: no-repeat;
         background-size: 181%;
