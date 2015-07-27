@@ -157,7 +157,10 @@
         /*background-size: cover;*/
         background-size: 170%;
         opacity: 1;
-        transition: opacity 0.2s linear;
+        /*transition: opacity 0.2s linear;*/
+        -webkit-transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
+        -moz-transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
+        transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
     }
 
     #projects .project-block .project-image img {
