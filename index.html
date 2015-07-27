@@ -49,9 +49,11 @@
             var st = $(this).scrollTop();
 
             if (st < lastScrollTop){
-                $('.navbar ').slideDown();
+                // $('.navbar ').slideDown();
+                $('.navbar ').fadeIn();
             } else {
-              $('.navbar ').slideUp();
+              // $('.navbar ').slideUp();
+              $('.navbar ').fadeOut();
             }
 
             lastScrollTop = st;
