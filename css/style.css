@@ -147,6 +147,13 @@
 
     #projects .project-block {
         height: 250px;
+        margin-bottom: 30px;
+    }
+
+    #projects .project-block a,
+    #projects .project-block a:hover {
+        text-decoration: none;
+        color: #2f363b;
     }
 
     #projects .project-block .project-image.wellesley {
@@ -166,10 +173,9 @@
     #projects .project-block .project-image.cb {
         background-image: url('../img/screenshots/course_browser+desktop.png');
         background-color: lightslategray;
-        background-position: 50% 50%;
+        background-position: 59% 44%;
         background-repeat: no-repeat;
-        /*background-size: cover;*/
-        background-size: 170%;
+        background-size: 181%;
     }
 
     #projects .project-block .project-image img {
