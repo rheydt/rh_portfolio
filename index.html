@@ -41,7 +41,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("p").hide(1000);
+        });
+        $(".btn2").click(function(){
+            $("p").show(1000);
+        });
+    });
+    </script>
+
 </head>
+
 
 
 <body id="page-top">
@@ -336,6 +348,11 @@
         </div> <!-- /.container -->
     </section> <!-- /. portfolio section -->
 
+    <p>This is a paragraph.</p>
+
+    <button class="btn1">Hide</button>
+    <button class="btn2">Show</button>
+
     <!-- <section id="about">
         <div class="container col-xs-12 col-sm-10 col-sm-offset-1">
             <h3>About</h3>
@@ -355,6 +372,7 @@
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/jquery.fittext.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="js/scroller.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="js/creative.js"></script>
 
