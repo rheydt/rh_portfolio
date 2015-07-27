@@ -150,8 +150,9 @@
         margin-bottom: 30px;
     }
 
-    #projects .project-block a,
-    #projects .project-block a:hover {
+    #projects .project-block a h4,
+    #projects .project-block a span,
+    #projects .project-block a:hover span {
         text-decoration: none !important;
         color: #2f363b !important;
     }
