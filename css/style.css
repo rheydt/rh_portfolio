@@ -173,6 +173,11 @@
         color: #fff;
     }
 
+    #projects .project-block .project-info .info-wrap {
+        width: 80%;
+        min-width: 300px;
+    }
+
     #projects .project-block .project-info h4 {
         margin-top: 30px;
         text-transform: uppercase;
@@ -195,68 +200,66 @@
 
     #projects .project-block.wellesley .project-image {
         background-image: url('../img/backgrounds/wellesley_background.png');
-        /*background-color: lightslategray;*/
+        background-color: #FE8282;
         background-position: 68% 12%;
         background-repeat: no-repeat;
-        /*background-size: cover;*/
-        background-size: 131%;
+        background-size: cover;
+        /*background-size: 131%;*/
         opacity: 1;
         /*transition: opacity 0.2s linear;*/
         /*-webkit-transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
         -moz-transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;
         transition: all 600ms cubic-bezier(.19,1,.22,1) 0ms;*/
     }
+
     #projects .project-block.wellesley .project-info {
         background-color: #FE8282;
     }
 
     #projects .project-block.davis .project-image {
         background-image: url('../img/backgrounds/davis_background.png');
-        /*background-color: lightslategray;*/
+        background-color: #1C1135;
         background-repeat: no-repeat;
         background-position: 7% 21%;
         background-size: 120%;
     }
+
     #projects .project-block.davis .project-info {
         background-color: #1C1135;
     }
 
     #projects .project-block.cb .project-image {
         background-image: url('../img/backgrounds/cb_background.png');
-        /*background-color: #E6A803;*/
+        background-color: #E6A803;
         background-position: 59% 44%;
         background-repeat: no-repeat;
         background-size: 100%;
     }
+
     #projects .project-block.cb .project-info {
         background-color: #E6A803;
     }
 
     #projects .project-block.art .project-image {
         background-image: url('../img/backgrounds/art_background.png');
-        /*background-color: #E6A803;*/
+        background-color: #a4aaa0;
         background-position: 11% 44%;
         background-repeat: no-repeat;
         background-size: 127%;
-        /*-moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";*/
     }
+
     #projects .project-block.art .project-info {
         background-color: #a4aaa0;
     }
 
+    .modal
 
-
-    #projects .project-block .project-image img {
+    /*#projects .project-block .project-image img {
         width: 100%;
         height: auto;
-    }
+    }*/
 
-    .desktop {
+    /*.desktop {
         width: 50%;
     }
     .tablet {
@@ -264,23 +267,23 @@
     }
     .mobile {
         width: 14%;
-    }
+    }*/
 
-    .desktop,
+    /*.desktop,
     .tablet,
     .mobile {
         max-height: 250px;
         margin-right: 20px;
-    }
+    }*/
 
-    .project-container {
+    /*.project-container {*/
         /*display: block;*/
         /*width: 80%;*/
-        height: auto;
-        margin: 20px auto;
-    }
+        /*height: auto;*/
+        /*margin: 20px auto;*/
+    /*}*/
 
-    .project-outline {
+    /*.project-outline {*/
         /*border: 1px dashed #e7e7e7;*/
         /*width: 100%;*/
         /*height: auto;*/
@@ -289,21 +292,21 @@
         /*height: 400px;
         overflow: hidden;
         margin-bottom: 10px;*/
-        padding: 25px 0;
-        margin: 25px 0;
-    }
+        /*padding: 25px 0;*/
+        /*margin: 25px 0;*/
+    /*}*/
 
 
     /*.project-outline a.project:hover {
                 background: transparent;
             }*/
 
-    .project-outline img {
+    /*.project-outline img {*/
         /*width: 100%;
         height: auto;*/
-    }
+    /*}*/
 
-    .project-outline img:hover {
+    /*.project-outline img:hover {*/
         /*filter: blur(10px);*/
         /*safari*/
         /*-webkit-filter: blur(10px);*/
@@ -312,12 +315,12 @@
         /*firefox*/
         /*-webkit-transition: all 0.15s ease-out;*/
         /*transition: all 0.15s ease-out;*/
-    }
+    /*}*/
 
-    .project-info {
+    /*.project-info {*/
         /*display: none;*/
         /*color: #fff;*/
-    }
+    /*}*/
 
     .project-title {
         text-transform: uppercase;
@@ -326,14 +329,14 @@
         margin-bottom: 10px;
     }
 
-    .project-roles {
+    /*.project-roles {
 
-    }
+    }*/
 
-    .slide-img img {
+    /*.slide-img img {
         width: 100%;
         height: auto;
-    }
+    }*/
 
 
 /* about */
