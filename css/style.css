@@ -278,7 +278,7 @@
         border-bottom: none;
     }
 
-    .modal.modal-title {
+    .modal .modal-title {
         text-align: center;
         text-transform: uppercase;
     }
