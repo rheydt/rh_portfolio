@@ -271,6 +271,7 @@
         -webkit-box-shadow: none;
         border: none;
         border-radius: 0;
+        background-color: #eee;
     }
 
     .modal-dialog .modal-header {
