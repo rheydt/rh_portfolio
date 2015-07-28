@@ -271,7 +271,7 @@
         -webkit-box-shadow: none;
         border: none;
         border-radius: 0;
-        background-color: #eee;
+        /*background-color: #eee;*/
     }
 
     .modal .modal-header {
