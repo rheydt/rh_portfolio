@@ -268,6 +268,18 @@
         background-color: #a4aaa0;
     }
 
+    #projects .project-block.albright .project-image {
+        background-image: url('../img/backgrounds/albright_background.png');
+        background-color: #7eabd2;
+        background-position: 11% 44%;
+        background-repeat: no-repeat;
+        background-size: 127%;
+    }
+
+    #projects .project-block.albright .project-info {
+        background-color: #7eabd2;
+    }
+
     .modal-dialog,
     .modal-content {
         margin: 0 auto;
