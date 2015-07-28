@@ -45,21 +45,25 @@
     <![endif]-->
 
     <script>
-        var lastScrollTop = 0;
+        // controls the nav auto-hide/show functionality
+        var lastScrollTop = 100;
 
         $(window).scroll(function () {
 
             var st = $(this).scrollTop();
 
+            // if we're moving down, hide the menu
+            // if we're moving up, slide the menu in
             if (st < lastScrollTop){
                 $('.navbar').removeClass('slide-in');
             } else {
-              $('.navbar').addClass('slide-in');
+                $('.navbar').addClass('slide-in');
             }
 
             lastScrollTop = st;
 
         });
+
     </script>
 
 </head>

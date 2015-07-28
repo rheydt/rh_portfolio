@@ -74,14 +74,12 @@
     }
 
     .navbar {
-        transition: all 1s ease-in-out
+        transition: all 1s ease-in-out;
     }
 
     nav.navbar-default {
         background-color: transparent;
     }
-
-    .navbar-header {}
 
     a.navbar-brand:hover {
         color: #000;
