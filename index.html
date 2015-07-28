@@ -52,12 +52,12 @@
 
             var newScrollPosition = $(this).scrollTop();
 
-            // if we're moving down, hide the menu
-            // if we're moving up, slide the menu in
-            if (newScrollPosition < initialScrollPosition){
-                $('.navbar').removeClass('slide-out');
+            // positions are negative (pxs above window),
+            // so if we're moving up, our position is getting more negative
+            if (newScrollPosition < initialScrollPosition) {
+                $('.navbar').removeClass('slide-away');
             } else {
-                $('.navbar').addClass('slide-out');
+                $('.navbar').addClass('slide-away');
             }
 
             initialScrollPosition = newScrollPosition;
