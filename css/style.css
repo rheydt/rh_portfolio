@@ -271,9 +271,9 @@
     #projects .project-block.albright .project-image {
         background-image: url('../img/backgrounds/albright_background.png');
         background-color: #7eabd2;
-        background-position: 11% 44%;
+        background-position: 0 0;
         background-repeat: no-repeat;
-        background-size: 127%;
+        background-size: 100%;
     }
 
     #projects .project-block.albright .project-info {
