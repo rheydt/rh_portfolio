@@ -319,22 +319,17 @@
         max-width: 100% !important;
     }
 
-    ./*modal .mockups img {
-        max-width: 100%;
+    .modal .mockups {
+        text-align: center;
     }
-*/
-    /*#projects .project-block .project-image img {
-        width: 100%;
-        height: auto;
-    }*/
 
-    /*.modal .mockups .desktop {
-        width: 70%;
-    }*/
-    .modal .mockups .tablet {
+    img.desktop {
+        margin-bottom: 30px;
+    }
+    img.tablet {
         width: 60%;
     }
-    .modal .mockups .mobile {
+    img.mobile {
         width: 35%;
     }
 
