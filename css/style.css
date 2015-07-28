@@ -145,6 +145,13 @@
         display: inline-block;
     }
 
+/* intro */
+    #intro {
+        background-color: #2f363b;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
 
 /* projects */
     #projects {
