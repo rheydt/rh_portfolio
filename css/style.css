@@ -303,9 +303,11 @@
         -moz-transition:all 0.5s ;
     }
     .modal .modal-header button.close:hover {
-        background-size: 175%;
-        width: 35px;
-        height: 35px;
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+        transform: rotate(225deg);
     }
 
     .modal .modal-title {
