@@ -46,6 +46,7 @@
 
     <script>
         // controls the nav auto-hide/show functionality
+
         var initialScrollPosition = 0;
 
         $(window).scroll(function () {
@@ -56,7 +57,9 @@
             // so if we're moving up, our position is getting more negative
             if (newScrollPosition < initialScrollPosition) {
                 $('.navbar').removeClass('slide-away');
-            } else {
+            }
+            // don't slide away nav unless we're already scrolled 100px
+            else if (newScrollPosition < -100) {
                 $('.navbar').addClass('slide-away');
             }
 
