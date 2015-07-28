@@ -270,6 +270,10 @@
         text-transform: uppercase;
     }
 
+    .modal .mockups img {
+        max-width: 500px;
+    }
+
     /*#projects .project-block .project-image img {
         width: 100%;
         height: auto;
