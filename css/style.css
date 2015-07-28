@@ -266,7 +266,7 @@
         width: 100%;
     }
 
-    .modal-dialog .modal-content {
+    .modal .modal-content {
         box-shadow: none;
         -webkit-box-shadow: none;
         border: none;
@@ -274,13 +274,17 @@
         background-color: #eee;
     }
 
-    .modal-dialog .modal-header {
+    .modal .modal-header {
         border-bottom: none;
     }
 
-    .modal-dialog .modal-title {
+    .modal.modal-title {
         text-align: center;
         text-transform: uppercase;
+    }
+
+    .modal .modal-body img {
+        max-width: 100%;
     }
 
     ./*modal .mockups img {
