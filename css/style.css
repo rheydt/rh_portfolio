@@ -192,6 +192,7 @@
     #projects .project-block .project-info .info-wrap {
         width: 80%;
         min-width: 300px;
+        font-weight: 600;
     }
 
     #projects .project-block .project-info h4 {
