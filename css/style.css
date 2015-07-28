@@ -259,7 +259,8 @@
     #projects .project-block.art .project-image {
         background-image: url('../img/backgrounds/art_background.png');
         background-color: #a4aaa0;
-        background-position: 11% 44%;
+        /*background-position: 11% 44%;*/
+        background-position: 111% 44%;
         background-repeat: no-repeat;
         background-size: 127%;
     }
