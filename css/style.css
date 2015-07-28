@@ -252,8 +252,24 @@
         background-color: #a4aaa0;
     }
 
-    .modal .modal-dialog {
+    .modal-dialog {
+        width: 90%;
+    }
 
+    .modal-dialog .modal-content {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-dialog .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-dialog .modal-title {
+        text-align: center;
+        text-transform: uppercase;
     }
 
     /*#projects .project-block .project-image img {
