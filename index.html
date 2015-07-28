@@ -46,21 +46,21 @@
 
     <script>
         // controls the nav auto-hide/show functionality
-        var lastScrollTop = 100;
+        var initialScrollPosition = 0;
 
         $(window).scroll(function () {
 
-            var st = $(this).scrollTop();
+            var newScrollPosition = $(this).scrollTop();
 
             // if we're moving down, hide the menu
             // if we're moving up, slide the menu in
-            if (st < lastScrollTop){
+            if (newScrollPosition < initialScrollPosition){
                 $('.navbar').removeClass('slide-out');
             } else {
                 $('.navbar').addClass('slide-out');
             }
 
-            lastScrollTop = st;
+            initialScrollPosition = newScrollPosition;
 
         });
 
