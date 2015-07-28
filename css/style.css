@@ -328,14 +328,14 @@
         height: auto;
     }*/
 
-    .modal .mockups .desktop {
+    /*.modal .mockups .desktop {
         width: 70%;
-    }
+    }*/
     .modal .mockups .tablet {
-        width: 70%;
+        width: 60%;
     }
     .modal .mockups .mobile {
-        width: 100%;
+        width: 35%;
     }
 
     /*.desktop,
