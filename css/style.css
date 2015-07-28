@@ -156,7 +156,7 @@
 /* projects */
     #projects {
         float: left;
-        padding-bottom: 40px;
+        /*padding-bottom: 40px;*/
     }
 
     #projects > .container {
@@ -428,7 +428,7 @@
 
     #about {
         float: left;
-        background-color: #F3F4F8;
+        /*background-color: #F3F4F8;*/
         /*border-top: 1px solid #222;*/
 
     }
