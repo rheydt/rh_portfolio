@@ -252,7 +252,9 @@
         background-color: #a4aaa0;
     }
 
-    .modal
+    .modal .modal-dialog {
+
+    }
 
     /*#projects .project-block .project-image img {
         width: 100%;
