@@ -206,7 +206,7 @@
         clear: both;
         background-color: transparent;
         box-shadow: none;
-        border: 2px solid #bbb;
+        border: 2px solid rgba(255,255,255,0.5);
         width: 80%;
         margin: 15px auto;
         padding: 5px;
