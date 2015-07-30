@@ -50,17 +50,17 @@
         $(function() {
 
             var initialScrollPosition = 0;
-            var currentScrollPosition = 0;
+            // var currentScrollPosition = 0;
             var scrollingDirection = 'down';
             var prevScrollingDirection = 'up';
 
             $(window).scroll(function () {
 
-                currentScrollPosition = $(this).scrollTop();
+                // currentScrollPosition = $(this).scrollTop();
 
-                // going up, show navbar
+                // going down
                 if ($(this).scrollTop() >= initialScrollPosition) {
-                    scrollingDirection = 'up';
+                    scrollingDirection = 'down';
                     // only animate if changing directions
                     if (scrollingDirection != 'prevScrollingDirection') {
                         console.log('going down: ');
@@ -70,9 +70,9 @@
                         prevScrollingDirection = scrollingDirection;
                     }
                 }
-                // going up, show navbar (faster)
+                // going down
                 else {
-                    scrollingDirection = 'down';
+                    scrollingDirection = 'up';
                     // only animate if changing directions
                     if (scrollingDirection != prevScrollingDirection) {
                         console.log('going up: ');
@@ -82,7 +82,7 @@
                         prevScrollingDirection = scrollingDirection;
                     }
                 }
-                prevScrollingDirection = $(this).scrollTop();
+                initialScrollPosition = $(this).scrollTop();
 
             });
 
