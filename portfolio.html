@@ -50,17 +50,20 @@
         $(function() {
 
             var initialScrollPosition = 0;
+            var currentScrollPosition = 0;
             var scrollingDirection = 'down';
             var prevScrollingDirection = 'up';
 
             $(window).scroll(function () {
 
-                // going up, hide navbar
+                currentScrollPosition = $(this).scrollTop();
+
+                // going up, show navbar
                 if ($(this).scrollTop() >= initialScrollPosition) {
                     scrollingDirection = 'up';
                     // only animate if changing directions
                     if (scrollingDirection != 'prevScrollingDirection') {
-                        console.log('going up: ');
+                        console.log('going down: ');
                         console.log($(this).scrollTop());
                         $('.navbar').stop();
                         $('.navbar').animate( {top: '-50px' }, 300);
@@ -72,7 +75,7 @@
                     scrollingDirection = 'down';
                     // only animate if changing directions
                     if (scrollingDirection != prevScrollingDirection) {
-                        console.log('going down: ');
+                        console.log('going up: ');
                         console.log($(this).scrollTop());
                         $('.navbar').stop();
                         $('.navbar').animate( {top: '0px' }, 200);
