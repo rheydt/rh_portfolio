@@ -429,7 +429,10 @@
     @media (max-width: 767px) {
         .project-title {
             padding: 10px 15px;
-            border-bottom: 1px solid rgba(0,0,0,.05);
+            /*border-bottom: 1px solid rgba(0,0,0,.05);*/
+            color: #333338;
+            text-transform: uppercase;
+            font-weight: 500;
         }
 
     }
