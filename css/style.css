@@ -428,6 +428,7 @@
 
     @media (max-width: 767px) {
         .project-title {
+            display: block;
             padding: 10px 15px;
             /*border-bottom: 1px solid rgba(0,0,0,.05);*/
             color: #333338;
