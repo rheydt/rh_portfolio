@@ -145,6 +145,7 @@
         display: inline-block;
     }
 
+
 /* intro */
     #intro {
         background-color: #2f363b;
@@ -152,6 +153,7 @@
         text-align: center;
         padding: 30px;
     }
+
 
 /* projects */
     #projects {
