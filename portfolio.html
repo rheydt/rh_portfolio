@@ -60,7 +60,7 @@
                 // currentScrollPosition = $(this).scrollTop();
 
                 // going down
-                if ($(this).scrollTop() >= initialScrollPosition) {
+                if ($(this).scrollTop() > initialScrollPosition) {
                     scrollingDirection = 'down';
                     // only animate if changing directions
                     if (scrollingDirection != 'prevScrollingDirection') {
