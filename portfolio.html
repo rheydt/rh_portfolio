@@ -55,9 +55,9 @@
 
             $(window).scroll(function () {
 
-                // going down, hide navbar
-                if ($(this).scrollTop() <= initialScrollPosition) {
-                    scrollingDirection = 'down';
+                // going up, hide navbar
+                if ($(this).scrollTop() >= initialScrollPosition) {
+                    scrollingDirection = 'up';
                     // only animate if changing directions
                     if (scrollingDirection != 'prevScrollingDirection') {
                         console.log('going down');
@@ -68,7 +68,7 @@
                 }
                 // going up, show navbar (faster)
                 else {
-                    scrollingDirection = 'up';
+                    scrollingDirection = 'down';
                     // only animate if changing directions
                     if (scrollingDirection != prevScrollingDirection) {
                         console.log('going up');
