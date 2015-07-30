@@ -60,7 +60,7 @@
                     scrollingDirection = 'up';
                     // only animate if changing directions
                     if (scrollingDirection != 'prevScrollingDirection') {
-                        console.log('going down');
+                        console.log('going down: ' . $(this).scrollTop());
                         $('.navbar').stop();
                         $('.navbar').animate( {top: '-50px' }, 300);
                         prevScrollingDirection = scrollingDirection;
@@ -71,7 +71,7 @@
                     scrollingDirection = 'down';
                     // only animate if changing directions
                     if (scrollingDirection != prevScrollingDirection) {
-                        console.log('going up');
+                        console.log('going up: ' . $(this).scrollTop());
                         $('.navbar').stop();
                         $('.navbar').animate( {top: '0px' }, 200);
                         prevScrollingDirection = scrollingDirection;
