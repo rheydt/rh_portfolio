@@ -164,27 +164,22 @@
 /* projects */
     #projects {
         float: left;
-        /*padding-bottom: 40px;*/
     }
 
     #projects > .container {
-        /*background-color: #F3F4F8;*/
-        /*background-color: aliceblue;*/
-        /*background-color: #1e1f22;*/
-        /*background-color: lightslategray;*/
         padding: 20px 0;
     }
 
-    #projects h3 {
+    /*#projects h3 {
         color: lightslategray;
         font-size: 24px;
         position: relative;
         top: -69px;
         text-transform: uppercase;
-    }
+    }*/
 
     #projects .project-block {
-        height: 250px;
+        height: 150px;
     }
 
     /*#projects a.project-block,
@@ -430,6 +425,13 @@
         width: 100%;
         height: auto;
     }*/
+
+    @media (min-width: 768px) {
+        #projects .project-block {
+            height: 250px;
+        }
+
+    }
 
 
 /* about */
