@@ -73,9 +73,14 @@
         font-size: 16px;
     }
 
+    ul {
+        list-style: none;
+    }
+
     .main-content {
         position: relative;
     }
+
 
 
 /* header */
@@ -440,7 +445,8 @@
         line-height: 30px;
     }
 
-    #about p {
+    #about p,
+    #about ul li {
         line-height: 26px;
         max-width: 600px;
         color: #99999a;
@@ -448,6 +454,7 @@
 
     #about a {
         color: #66666a;
+        text-decoration: underline;
     }
 
     #about a:hover {
