@@ -25,9 +25,9 @@
         padding: 0;
     }
 
-    .slide-away {
+    /*.slide-away {
         top: -100px;
-    }
+    }*/
 
     .row {
         display: flex;

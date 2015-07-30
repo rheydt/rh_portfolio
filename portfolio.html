@@ -46,24 +46,52 @@
 
     <script>
         // controls the nav auto-hide/show functionality
+        //
+        $(function() {
 
-        var initialScrollPosition = 0;
+            var initialScrollPosition = 0;
+            var scrollingDirection = 'down';
+            var prevScrollingDirection = 'up';
 
-        $(window).scroll(function () {
+            $(window).scroll(function () {
 
-            var newScrollPosition = $(this).scrollTop();
 
-            // positions are negative (pxs above window),
-            // so if we're moving up, our position is getting more negative
-            if (newScrollPosition < initialScrollPosition) {
-                $('.navbar').removeClass('slide-away');
-            }
-            // don't slide away nav unless we're already scrolled 100px
-            else {
-                $('.navbar').addClass('slide-away');
-            }
+                if ($(this).scrollTop() >= initialScrollPosition) {
+                    scrollingDirection = 'down';
 
-            initialScrollPosition = newScrollPosition;
+                    if (scrollingDirection != 'prevScrollingDirection') {
+                        $('.navbar').stop();
+                        $('.navbar').animate( {top: '-50px' }, 300);
+                        prevScrollingDirection = scrollingDirection;
+                    }
+                }
+                else {
+                    scrollingDirection = 'up';
+                    if (scrollingDirection != prevScrollingDirection) {
+                        $('.navbar').stop();
+                        $('.navbar').animate( {top: '0px' }, 300);
+                        prevScrollingDirection = scrollingDirection;
+                    }
+                }
+                prevScrollingDirection = $(this).scrollTop();
+
+            });
+
+
+                // var newScrollPosition = $(this).scrollTop();
+
+                // positions are negative (pxs above window),
+                // so if we're moving up, our position is getting more negative
+                // if (newScrollPosition < initialScrollPosition) {
+                    // $('.navbar').removeClass('slide-away');
+                // }
+                // don't slide away nav unless we're already scrolled 100px
+                // else {
+                    // $('.navbar').addClass('slide-away');
+                // }
+
+                // initialScrollPosition = newScrollPosition;
+
 
         });
 
@@ -587,6 +615,11 @@
                     </p>
                 </div>
             </div>
+
+            <!-- <div>
+                Back to Top
+            </div> -->
+
         </section>
 
         <!-- <section id="contact">
