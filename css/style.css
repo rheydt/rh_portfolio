@@ -287,10 +287,12 @@
         background-color: #7eabd2;
     }
 
+    .modal,
     .modal-dialog,
     .modal-content {
         margin: 0 auto;
         width: 100%;
+        height: 100%;
     }
 
     .modal .modal-content {
