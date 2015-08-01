@@ -25,10 +25,6 @@
         padding: 0;
     }
 
-    /*.slide-away {
-        top: -100px;
-    }*/
-
     .row {
         display: flex;
         margin-left: -1px;
@@ -89,6 +85,10 @@
     #mainNav {
         background-color: #fff;
         border-bottom: none;
+    }
+
+    .nav>li>a {
+        display: inline;
     }
 
     .navbar {
