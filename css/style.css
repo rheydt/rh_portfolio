@@ -87,7 +87,8 @@
         border-bottom: none;
     }
 
-    .nav>li>a {
+    .nav > li,
+    .nav > li> a {
         display: inline;
     }
 
