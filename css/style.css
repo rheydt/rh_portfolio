@@ -87,17 +87,12 @@
         border-bottom: none;
     }
 
-    .nav > li,
-    .nav > li> a {
-        display: inline;
-    }
-
-    @media (min-width: 768px) {
-        .navbar {
-            margin-top: 15px;
+    @media (max-width: 767px) {
+        .nav > li,
+        .nav > li> a {
+            display: inline;
         }
     }
-
 
     .navbar {
         transition: all 1s ease-in-out;
