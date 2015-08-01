@@ -366,6 +366,24 @@
     img.mobile {
         width: 35%;
     }
+    .caption {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+        border-left-color: #1b809e;
+    }
+    .caption h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .caption p {
+
+    }
+    .caption p:last-child {
+        margin-bottom: 0;
+    }
 
     /*.desktop,
     .tablet,
