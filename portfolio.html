@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Rose Heydt | Web Developer">
+    <meta name="author" content="Rose Heydt">
+    <title>Rose Heydt | Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Icons -->
+    <link rel="icon" href="img/favicon.ico">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="font-mfizz/font-mfizz.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS -->
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        // controls the nav auto-hide/show functionality
+        //
+        $(function() {
+
+            // var initialScrollPosition = 0;
+            var initialScrollPosition = $(this).scrollTop();
+            // var currentScrollPosition = 0;
+            var scrollingDirection = 'down';
+            var prevScrollingDirection = 'up';
+
+            $(window).scroll(function () {
+
+                // currentScrollPosition = $(this).scrollTop();
+
+                // going down
+                if ($(this).scrollTop() > initialScrollPosition) {
+                    scrollingDirection = 'down';
+                    // only animate if changing directions
+                    if (scrollingDirection != 'prevScrollingDirection') {
+                        console.log('going down: ');
+                        console.log($(this).scrollTop());
+                        $('.navbar').stop();
+                        $('.navbar').animate( {top: '-50px' }, 300);
+                        prevScrollingDirection = scrollingDirection;
+                    }
+                }
+                // going down
+                else {
+                    scrollingDirection = 'up';
+                    // only animate if changing directions
+                    if (scrollingDirection != prevScrollingDirection) {
+                        console.log('going up: ');
+                        console.log($(this).scrollTop());
+                        $('.navbar').stop();
+                        $('.navbar').animate( {top: '0px' }, 200);
+                        prevScrollingDirection = scrollingDirection;
+                    }
+                }
+                initialScrollPosition = $(this).scrollTop();
+
+            });
+
+
+                // var newScrollPosition = $(this).scrollTop();
+
+                // positions are negative (pxs above window),
+                // so if we're moving up, our position is getting more negative
+                // if (newScrollPosition < initialScrollPosition) {
+                    // $('.navbar').removeClass('slide-away');
+                // }
+                // don't slide away nav unless we're already scrolled 100px
+                // else {
+                    // $('.navbar').addClass('slide-away');
+                // }
+
+                // initialScrollPosition = newScrollPosition;
+
+
+        });
+
+    </script>
+
+</head>
+
+
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <!-- mobile nav expander button -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+
+                <!-- title/branding that links back to the top of the page -->
+                <div class="center-float-container">
+                    <a class="navbar-brand page-scroll center-float-inside" href="#page-top">Rose Heydt</a>
+                </div>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-links">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#toolbox">Toolbox</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- /.container-fluid -->
+
+    </nav>
+
+    <div class="clear"></div>
+
+    <div class="headroom">
+        <!-- this pads the header so things don't go under it -->
+    </div>
+
+    <div class="main-content">
+
+        <!-- <section id="intro" class="col-xs-12 no-padding" style="background-color: #000; color: #fff;">
+            Web Development, Responsive Design
+        </section> -->
+
+        <section id="projects" class="col-xs-12 no-padding">
+            <!-- <div class="container col-xs-12 col-sm-10 col-sm-offset-1"> -->
+                <!-- <h3 class="visible-xs">Recent Projects</h3> -->
+
+                <!-- accordion portfolio for mobile -->
+                <!-- <div class="panel-group visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingWellesley">
+                            <h4 class="panel-title">
+                                <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWellesley" aria-expanded="false" aria-controls="collapseWellesley"> -->
+                                <!-- <a role="button"  data-toggle="modal" data-target="#wellesley-modal">
+                                    <div class="project-title">Wellesley College Responsive Redesign</div>
+                                </a>
+                            </h4>
+                        </div> -->
+                        <!-- <div id="collapseWellesley" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWellesley">
+                            <div class="panel-body">
+                                <div id="wellesley-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#wellesley-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#wellesley-carousel" data-slide-to="1"></li>
+                                        <li data-target="#wellesley-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src='img/portfolio/wellesley/homepage_desktop_floating_menu.jpg' alt='Wellesley College website homepage'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src='img/portfolio/wellesley/homepage_desktop_floating_menu.jpg' alt='Wellesley College website homepage'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#wellesley-carousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#wellesley-carousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                   <!--  </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingDavis">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDavis" aria-expanded="false" aria-controls="collapseDavis">
+                                    <div class="project-title">Davis Museum</div>
+                                </a>
+                            </h4>
+                        </div> -->
+                        <!-- <div id="collapseDavis" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDavis">
+                            <div class="panel-body">
+                                <div id="davis-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#davis-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#davis-carousel" data-slide-to="1"></li>
+                                        <li data-target="#davis-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src='img/portfolio/davis museum/davis home 3.jpg'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src='img/portfolio/davis museum/davis home 3.jpg'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingCourseBrowser">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCourseBrowser" aria-expanded="false" aria-controls="collapseCourseBrowser">
+                                    <div class="project-title">Wellesley Course Browser</div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseCourseBrowser" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCourseBrowser">
+                            <div class="panel-body">
+                                <div id="course-browser-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#course-browser-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#course-browser-carousel" data-slide-to="1"></li>
+                                        <li data-target="#course-browser-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src='img/portfolio/course browser/browser demo.jpg'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src='img/portfolio/course browser/browser demo.jpg'>
+                                            <div class="carousel-caption">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#course-browser-carousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#course-browser-carousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingAlbright">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAlbright" aria-expanded="false" aria-controls="collapseAlbright">
+                                    <div class="project-title">Albright Institute</div>
+                                </a>
+                            </h4>
+                        </div> -->
+                        <!-- <div id="collapseAlbright" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAlbright">
+                            <div class="panel-body">
+                                <div id="albright-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#albright-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#albright-carousel" data-slide-to="1"></li>
+                                        <li data-target="#albright-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="slide-img col-xs-12 col-sm-8 pull-left">
+                                                <img src='img/portfolio/albright/albright_home.jpg'>
+                                            </div>
+                                            <div class="slide-caption col-xs-12 col-sm-4 pull-right">
+                                                <p>Here is some information about this project.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="slide-img col-xs-12 col-sm-8 pull-left">
+                                                <img src='img/portfolio/albright/albright_home.jpg'>
+                                            </div>
+                                            <div class="slide-caption col-xs-12 col-sm-4 pull-right">
+                                                <p>Here is some information about this project.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#albright-carousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#albright-carousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingArt">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseArt" aria-expanded="false" aria-controls="collapseArt">
+                                    <div class="project-title">Art Department</div>
+                                </a>
+                            </h4>
+                        </div> -->
+                        <!-- <div id="collapseAlbright" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAlbright">
+                            <div class="panel-body">
+                                <div id="albright-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#albright-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#albright-carousel" data-slide-to="1"></li>
+                                        <li data-target="#albright-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="slide-img col-xs-12 col-sm-8 pull-left">
+                                                <img src='img/portfolio/albright/albright_home.jpg'>
+                                            </div>
+                                            <div class="slide-caption col-xs-12 col-sm-4 pull-right">
+                                                <p>Here is some information about this project.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="slide-img col-xs-12 col-sm-8 pull-left">
+                                                <img src='img/portfolio/albright/albright_home.jpg'>
+                                            </div>
+                                            <div class="slide-caption col-xs-12 col-sm-4 pull-right">
+                                                <p>Here is some information about this project.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#albright-carousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#albright-carousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div>
+                </div>  -->
+
+                <!-- desktop layout -->
+                <div class="hidden-xs">
+
+                    <div class="project-block row wellesley">
+                        <div class="project-image col-sm-7">
+                            <!-- <img src="http://placehold.it/400x200"> -->
+                        </div>
+                        <div class="project-info col-sm-5">
+                            <div class="info-wrap">
+                                <h4>Wellesley College</h4>
+                                <span>Drupal theming, Bootstrap, jQuery, Interaction Design</span>
+                                <button class="see-more" data-toggle="modal" data-target="#wellesley-modal">See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project-block row davis">
+                        <div class="project-info col-sm-5">
+                            <div class="info-wrap">
+                                <h4>Davis Museum</h4>
+                                <span>Drupal theming, Site Configuration, jQuery, PHP</span>
+                                <button class="see-more" data-toggle="modal" data-target="#davis-modal">See more</button>
+                            </div>
+                        </div>
+                        <div class="project-image col-sm-7">
+                        </div>
+                    </div>
+
+
+                    <div class="project-block row cb">
+                        <div class="project-image col-sm-7">
+                        </div>
+                        <div class="project-info col-sm-5">
+                            <div class="info-wrap">
+                                <h4>Course Browser</h4>
+                                <span>PHP, MySQL, Javascript, Ajax, Bootstrap, UI Design</span>
+                                <button class="see-more" data-toggle="modal" data-target="#cb-modal">See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-block row albright">
+                        <div class="project-info col-sm-5">
+                            <div class="info-wrap">
+                                <h4>Madeline Albright Institute</h4>
+                                <span>Drupal theming, jQuery</span>
+                                <button class="see-more" data-toggle="modal" data-target="#albright-modal">See more</button>
+                            </div>
+                        </div>
+                        <div class="project-image col-sm-7">
+                        </div>
+                    </div>
+
+                    <div class="project-block row art">
+                        <div class="project-image col-sm-7">
+                        </div>
+                        <div class="project-info col-sm-5">
+                            <div class="info-wrap">
+                                <h4>Art Department</h4>
+                                <span>Drupal, jQuery</span>
+                                <button class="see-more" data-toggle="modal" data-target="#art-modal">See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- /.hidden-xs -->
+
+                <!-- mobile layout -->
+                <div class="visible-xs col-xs-12">
+                    <ul class="project-list">
+                        <li><a class="project-title" data-toggle="modal" href="#wellesley-modal">Wellesley College Responsive Redesign</a></li>
+                        <li><a class="project-title" data-toggle="modal" href="#davis-modal">Davis Museum</a></li>
+                        <li><a class="project-title" data-toggle="modal" href="#cb-modal">Responsive College Course Browser</a></li>
+                        <li><a class="project-title" data-toggle="modal" href="#albright-modal">Madeline Albright Institute</a></li>
+                        <li><a class="project-title" data-toggle="modal" href="#art-modal">Art Department</a></li>
+                    </ul>
+                </div>
+
+        </section> <!-- /. portfolio section -->
+
+        <!-- project modals -->
+        <!-- wellesley -->
+        <div class="modal fade" id="wellesley-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Wellesley College Responsive Website</h4>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Next" data-toggle="modal" data-target="#art-modal"><span aria-hidden="true">Next Project</span></button> -->
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="mockups">
+                            <img class="desktop" src='img/screenshots/wellesley_home+desktop.png'>
+                            <img class="tablet" src='img/screenshots/wellesley_home+tablet.png'>
+                            <img class="mobile" src='img/screenshots/wellesley_home+mobile.png'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- davis -->
+        <div class="modal fade" id="davis-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                    <div class="modal-header">
+                        <button type="button" class="close navbar-toggle" data-dismiss="modal" aria-label="Close">
+                            <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Davis Museum</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mockups">
+                            <img class="desktop" src='img/screenshots/davis+desktop.png'>
+                        </div>
+                        Sliders
+                        <img src="SCREENCAPS/raw/davis_museum/davis museum sliders.jpg">
+                        Recent Acquisitions main page
+                        <img src="SCREENCAPS/raw/davis_museum/recent acquisitions.jpg">
+                        Recent Acquisitions, full information view of one acquisition
+                        <img src="SCREENCAPS/raw/davis_museum/recent acquisitions artwork.jpg">
+                        Friends of Art
+                        <img src="SCREENCAPS/raw/davis_museum/davis friends of art.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- course browser -->
+        <div class="modal fade" id="cb-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Course Browser</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mockups">
+                            <img class="desktop" src='img/screenshots/course_browser+desktop.png'>
+                            <img class="tablet" src='img/screenshots/course_browser+tablet.png'>
+                            <img class="mobile" src='img/screenshots/course_browser+mobile.png'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- art dept -->
+        <div class="modal fade" id="art-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Art Department</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mockups">
+                            <img class="desktop" src='img/screenshots/art+desktop.png'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- albright -->
+        <div class="modal fade" id="albright-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Albright Institute</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mockups">
+                            <img class="desktop" src='img/screenshots/albright+desktop.png'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="about" class="col-xs-12">
+            <div class="container col-xs-12 col-sm-10 col-sm-offset-1">
+                <!-- <h3>About</h3> -->
+                <div class="col-xs-12 col-sm-6 no-padding">
+                    <h3>About</h3>
+                    <p>
+                        Rose Heydt is a web developer living in Somerville, MA. She was born in Lincoln, Nebraska, and educated at Wellesley College.
+                    </p>
+                    <p>
+                        When she's not coding, Rose enjoys riding her bike, listening to nerdy podcasts, trying new IPAs, and dreaming about converting the kitchen into a woodshop.
+                    </p>
+                    <p>
+                    <!-- html5 download attribute not supported in safari & IE -->
+                    Download my <a href="/img/RoseHeydt-Resume.pdf" download>resume</a>.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1 no-padding">
+                    <h3>Toolbox</h3>
+                    <!-- <ul>
+                        <li>Version control: Git</li>
+                        <li>Text Editor: Sublime Text</li>
+                        <li>Responsive Framework: Bootstrap</li>
+                        <li>CMS: Drupal</li>
+                        <li>Workflow: Agile / Scrum</li>
+                        <li>Wireframing:  Balsamiq</li>
+                        <li>Mockups: Webflow & Adobe InDesign<li>
+                        <li>Graphics: Adobe Photoshop & Illustrator<li>
+                        <li>Favorite web trend: Single page sites</li>
+                        <li>Favorite industry site: Smashing Magazine</li>
+                    </ul> -->
+                    <ul>
+                        <li>Stack: HTML5, CSS3, jQuery / Javascript, LESS, Bootstrap, PHP / MySQL, Ajax, Unix</li>
+                        <li>Apps: Sublime, Google Analytics, Adobe Photoshop, Illustrator, and InDesign</li>
+                        <li>Coming next: Angular.js, D3.js</li>
+                    </ul>
+                    <p>
+                        I believe in well-researched UX, agile development, pair programming, semantic code, maintenance plans, and commenting like crazy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div>
+                Back to Top
+            </div> -->
+
+        </section>
+
+        <!-- <section id="contact">
+            <div class="container col-xs-12 col-sm-10 col-sm-offset-1">
+                <h3>Contact</h3>
+                <p>
+                    Here is my contact info.
+                </p>
+            </div>
+        </section> -->
+
+    </div> <!-- /.main-content -->
+
+
+
+    <!-- jQuery (loads faster at the end of the document)-->
+    <!--<script src="js/jquery.js"></script>-->
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- Plugin JavaScript -->
+    <!--script src="js/jquery.easing.min.js"></script>-->
+    <!--<script src="js/jquery.fittext.js"></script>-->
+    <!--<script src="js/wow.min.js"></script>-->
+    <!-- Custom Theme JavaScript -->
+    <!--<script src="js/creative.js"></script>-->
+
+
+</body>
+
+</html>
