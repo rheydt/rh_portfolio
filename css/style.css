@@ -169,6 +169,10 @@
         float: left;
     }
 
+    #projects h3 {
+        padding: 30px;
+    }
+
     #projects > .container {
         padding: 20px 0;
     }
@@ -437,7 +441,8 @@
             display: block;
             padding: 10px 15px;
             /*border-bottom: 1px solid rgba(0,0,0,.05);*/
-            color: #333338;
+            /*color: #333338;*/
+            color: #99999a;
             text-transform: uppercase;
             font-weight: 500;
         }
