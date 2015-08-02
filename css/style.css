@@ -357,8 +357,8 @@
         text-align: center;
     }
 
-    img.desktop {
-        margin-bottom: 30px;
+    .modal-body img {
+        margin-bottom: 10px;
     }
     img.tablet {
         width: 60%;
@@ -367,12 +367,11 @@
         width: 35%;
     }
     .caption {
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #eee;
-        border-left-width: 5px;
+        padding: 10px 20px;
+        margin: 0 0 65px 0;
+        border-left: 5px solid #1b809e;
         border-radius: 3px;
-        border-left-color: #1b809e;
+        text-align: left;
     }
     .caption h4 {
         margin-top: 0;
