@@ -398,6 +398,19 @@
         max-width: 100% !important;
     }
 
+    .modal-body a {
+        border-bottom: 1px solid coral;
+        color: #99999a;
+        text-transform: uppercase;
+    }
+    .modal-body a:hover,
+    .modal-bosy a:focus {
+        color: #000;
+        background-color: rgba(255, 127, 80, 0.5);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+    }
+
     .modal .mockups {
         text-align: center;
     }
