@@ -74,10 +74,15 @@
         padding-left: 0;
     }
 
+    a:focus,
+    a:hover {
+        color: #1b809e;
+        text-decoration: none;
+    }
+
     .main-content {
         position: relative;
     }
-
 
 
 /* header */
