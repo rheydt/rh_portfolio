@@ -464,42 +464,44 @@
 
 
 
-/* about */
+/* about sections */
 
-    #about {
+    .about-sections {
         float: left;
-        /*background-color: #F3F4F8;*/
-        /*border-top: 1px solid #222;*/
-        padding-bottom: 60px;
-        margin-top: 30px;
     }
-
-    #about h3 {
+    .about-sections h3 {
         margin: 0 0 20px 0;
         line-height: 30px;
     }
-    @media (min-width: 768px) {
-        #about {
-            margin-top: 0;
-        }
-        #about h3 {
-            margin: 60px 0 20px 0;
-        }
-    }
-
-    #about p,
-    #about ul li {
+    .about-sections p,
+    .about-sections ul li {
         line-height: 26px;
         max-width: 600px;
         color: #99999a;
     }
-
-    #about a {
+    .about-sections a {
         color: #66666a;
         border-bottom: 1px solid coral;
     }
-
-    #about a:hover {
+    .about-sections a:hover {
         color: #22222a;
         -webkit-transition: color 0.2s linear;
     }
+    #about {
+        /*background-color: #F3F4F8;*/
+        /*border-top: 1px solid #222;*/
+        /*padding-bottom: 60px;*/
+        margin-top: 30px;
+    }
+    @media (min-width: 768px) {
+        .about-sections {
+            margin-top: 0;
+        }
+        .about-sections h3 {
+            margin: 60px 0 20px 0;
+        }
+    }
+
+
+
+
