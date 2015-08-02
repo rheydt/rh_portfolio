@@ -245,6 +245,10 @@
         bottom: 30px;
     }
 
+    #projects .project-block .project-info .see-more:hover {
+        background-color: rgba(255,255,255,0.3);
+    }
+
     #projects .project-block.wellesley .project-image {
         background-image: url('../img/backgrounds/wellesley_background.png');
         background-color: #FE8282;
