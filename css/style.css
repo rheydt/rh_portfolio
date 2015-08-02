@@ -94,7 +94,7 @@
     }*/
     a:focus,
     a:hover {
-        color: #333;
+        color: #000;
         background-color: rgba(255, 127, 80, 0.5);
         text-decoration: none;
     }
