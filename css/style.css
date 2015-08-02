@@ -80,6 +80,10 @@
         text-decoration: none;
     }
 
+    a:focus {
+        outline: none !important;
+    }
+
     .main-content {
         position: relative;
     }
