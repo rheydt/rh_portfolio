@@ -369,7 +369,8 @@
     .caption {
         padding: 10px 20px;
         margin: 0 0 65px 0;
-        border-left: 5px solid #1b809e;
+        /*border-left: 5px solid #1b809e;*/
+        border-left: 5px solid #7ac5cd;
         border-radius: 3px;
         text-align: left;
     }
@@ -495,7 +496,7 @@
 
     #about a {
         color: #66666a;
-        text-decoration: underline;
+        border-bottom: 1px solid coral;
     }
 
     #about a:hover {
