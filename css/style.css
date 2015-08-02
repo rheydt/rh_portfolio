@@ -291,6 +291,10 @@
         background-color: #7eabd2;
     }
 
+    .project-list li p {
+        margin: -10px 15px 25px 15px;
+    }
+
     .modal,
     .modal-dialog,
     .modal-content {
